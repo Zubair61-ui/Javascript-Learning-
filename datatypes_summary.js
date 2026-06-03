@@ -15,7 +15,7 @@
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
-const score = 100
+/* const score = 100
 const scoreValue = 100.3
 
 const isLoggedIn = false
@@ -48,3 +48,23 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+*/
+// Stack memory : Primitive datatypes are stored in stack memory. They are accessed directly and have a fixed size. When you assign a primitive value to a variable, it creates a copy of that value in memory.
+let myyoutubeChannel = "Code with Hitesh";
+let anotherYoutubeChannel = myyoutubeChannel;
+anotherYoutubeChannel = "Code with Harry";
+console.log(myyoutubeChannel);
+console.log(anotherYoutubeChannel);
+
+// Heap memory : Non-primitive datatypes are stored in heap memory. They can have a variable size and are accessed through references. When you assign a non-primitive value to a variable, it creates a reference to that value in memory, rather than copying it.
+let userOne = {         // The reference to this object is stored in the Stack.
+    email: "user@google.com",
+    upi: "user@ybl"
+};                      // The actual object data is stored in the Heap.
+
+let userTwo = userOne;  // userTwo references the same object in the Heap.
+
+userTwo.email = "ayush@google.com"; // Modifying userTwo also affects userOne.
+
+console.log(userOne.email); // Output: ayush@google.com
+console.log(userTwo.email); // Output: ayush@google.com
