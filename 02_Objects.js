@@ -57,3 +57,29 @@ console.log(Object.entries(tinderUser)); // Returns an array of key value pairs
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+// Object destructuring is a convenient way of extracting multiple values from an object and assigning them to variables. It allows us to unpack properties from objects into distinct variables. Here's an example of object destructuring:
+const course = {
+    coursename: "js in hindi", // Property to hold the course name
+    price: "999", // Property to hold the course price
+    courseInstructor: "hitesh"
+}
+
+course.courseInstructor // const courseInstructor = course.courseInstructor
+
+const {courseInstructor: instructor} = course // Object destructuring with renaming
+
+// console.log(courseInstructor);
+console.log(instructor); // Output: hitesh
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+// JSON api is used to convert JavaScript objects to JSON string and JSON string to JavaScript objects
+[
+    {},
+    {},
+    {}
+]
