@@ -1,7 +1,7 @@
 // Arrays in JavaScript
 
 // Creating an array
-// let fruits = ['Apple', 'Banana', 'Cherry'];
+ //let fruits = ['Apple', 'Banana', 'Cherry'];
 // console.log(fruits); // Output: ['Apple', 'Banana', 'Cherry']
 // // Accessing elements
 // console.log(fruits[0]); // Output: 'Apple'
@@ -22,7 +22,7 @@
 // console.log(fruits); // Output: ['Apricot', 'Blueberry', 'Cherry']
 // // Length of the array
 // console.log(fruits.length); // Output: 3
-// // Iterating over the array
+// Iterating over the array
 // fruits.forEach(function(fruit) {
 //     console.log(fruit);
 // });
@@ -30,7 +30,7 @@
 // // 'Apricot'
 // // 'Blueberry'
 // // 'Cherry'
-// // Using map to create a new array
+// Using map to create a new array
 // let upperCaseFruits = fruits.map(function(fruit) {
 //     return fruit.toUpperCase();
 // });
@@ -40,9 +40,9 @@
 //     return fruit.startsWith('B');
 // });
 // console.log(filteredFruits); // Output: ['Blueberry']
-// // Using find to get the first element that matches a condition
+// Using find to get the first element that matches a condition
 // let foundFruit = fruits.find(function(fruit) {
-//     return fruit.length > 6;
+//     return fruit.length > 4;
 // });
 // console.log(foundFruit); // Output: 'Blueberry'
 // // Using indexOf to find the index of an element
@@ -53,50 +53,50 @@
 // console.log(hasApple); // Output: false
 // let hasCherry = fruits.includes('Cherry');
 // console.log(hasCherry); // Output: true
-// // Using slice to create a new array from a portion of the original array
-// let slicedFruits = fruits.slice(1, 3);
+// Using slice to create a new array from a portion of the original array
+// let slicedFruits = fruits.slice(1, 3); // This will create a new array with elements from index 1 to 2 (3 is not included)
 // console.log(slicedFruits); // Output: ['Blueberry', 'Cherry']
 // // Using splice to modify the array by adding/removing elements
-// fruits.splice(1, 1, 'Blackberry');
+// fruits.splice(1, 1, 'Blackberry'); // This will remove 1 element at index 1 and add 'Blackberry' at that position
 // console.log(fruits); // Output: ['Apricot', 'Blackberry', 'Cherry']
 
-const myArr = [0, 3, 2, 3, 4, 5]
-const myHeors = ["shaktiman", "naagraj"]
+// const myArr = [0, 3, 2, 3, 4, 5]
+// const myHeors = ["shaktiman", "naagraj"]
 
-const myArr2 = new Array(1, 2, 3, 4)
-console.log(typeof myArr);
-console.log(typeof myArr2);
-console.log(myArr2[1]);
-//Array methods
+// const myArr2 = new Array(1, 2, 3, 4)
+// console.log(typeof myArr);
+// console.log(typeof myArr2);
+// console.log(myArr2[1]);
+// //Array methods
 
-myArr.push(6)
-myArr.push(7)
-console.log(myArr); // Output: [0, 1, 2, 3, 4, 5, 6, 7]
-myArr.pop()
-console.log(myArr); // Output: [0, 1, 2, 3, 4, 5, 6]
-myArr.unshift(9)
-myArr.shift()
-console.log(myArr); // Output: [9, 0, 1, 2, 3, 4, 5, 6]
+// myArr.push(6)
+// myArr.push(7)
+// console.log(myArr); // Output: [0, 1, 2, 3, 4, 5, 6, 7]
+// myArr.pop()
+// console.log(myArr); // Output: [0, 1, 2, 3, 4, 5, 6]
+// myArr.unshift(9)
+// myArr.shift()
+// console.log(myArr); // Output: [9, 0, 1, 2, 3, 4, 5, 6]
 
-console.log(myArr.includes(9));
-console.log(myArr.indexOf(3));
+// console.log(myArr.includes(9));
+// console.log(myArr.indexOf(3));
 
-const newArr = myArr.join()
+// const newArr = myArr.join()
 
-console.log(myArr);
-console.log( newArr);
-
-
-// slice, splice
-
-console.log("A ", myArr);
-
-const myn1 = myArr.slice(1, 3)
-
-console.log(myn1);
-console.log("B ", myArr);
+// console.log(myArr);
+// console.log( newArr);
 
 
-const myn2 = myArr.splice(1, 3)
-console.log("C ", myArr);
-console.log(myn2);
+// // slice, splice
+
+// console.log("A ", myArr);
+
+// const myn1 = myArr.slice(1, 3)
+
+// console.log(myn1);
+// console.log("B ", myArr);
+
+
+// const myn2 = myArr.splice(1, 3)
+// console.log("C ", myArr);
+// console.log(myn2);
