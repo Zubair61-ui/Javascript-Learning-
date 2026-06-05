@@ -16,7 +16,7 @@
 //     price: 999,
 
 //     welcomeMessage: function() {
-//         console.log(`${this.username} , welcome to website`); // The 'this' keyword always refers to the current object, which is the 'user' object in this case.
+//         console.log(`${this.username} , welcome to website`); //    The 'this' keyword always refers to the current object, which is the 'user' object in this case.
 //         //console.log(this); // The 'this' keyword refers to the object that is calling the function, which in this case is the 'user' object.
 //     }
 
