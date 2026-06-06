@@ -43,7 +43,7 @@
 
 // console.log(val1);
 
-// Terniary Operator
+// Terniary Operator works similar like if-else and can be used as conditional statement
 
 // condition ? true : false
 
