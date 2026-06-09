@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000) // setTimeout() is a built-in JavaScript function that executes
+    //  a piece of code or a function after a specified delay (measured in milliseconds).
+
+//Here, it is told to run the changeText function after 2000 milliseconds (2 seconds).
+
+//The setTimeout function returns a unique ID (a number), 
+// which is stored in the constant variable changeMe.
+//  This ID acts like a receipt that allows JavaScript to track or cancel this specific timer later.
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)// clearTimeout(changeMe) takes the timer ID we saved earlier and cancels it entirely. 
+        // As a result, the changeText function will never execute, and the heading text will stay "Chai aur code".
+        console.log("STOPPED")
+    })
+</script>
+</html>
